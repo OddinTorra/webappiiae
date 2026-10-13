@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страны</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Страны мира</h1>
+        <p class="subtitle">Выбери страну, чтобы отправить ее в Telegram-бот.</p>
+
+        <section class="grid">
+            <article class="card">
+                <img src="flags/ru.png" alt="Флаг России" class="flag">
+                <h2>Россия</h2>
+                <button class="country-btn" data-country="ru">Выбрать</button>
+            </article>
+
+            <article class="card">
+                <img src="flags/fr.png" alt="Флаг Франции" class="flag">
+                <h2>Франция</h2>
+                <button class="country-btn" data-country="fr">Выбрать</button>
+            </article>
+
+            <article class="card">
+                <img src="flags/jp.png" alt="Флаг Японии" class="flag">
+                <h2>Япония</h2>
+                <button class="country-btn" data-country="jp">Выбрать</button>
+            </article>
+
+            <article class="card">
+                <img src="flags/it.png" alt="Флаг Италии" class="flag">
+                <h2>Италия</h2>
+                <button class="country-btn" data-country="it">Выбрать</button>
+            </article>
+
+            <article class="card">
+                <img src="flags/br.png" alt="Флаг Бразилии" class="flag">
+                <h2>Бразилия</h2>
+                <button class="country-btn" data-country="br">Выбрать</button>
+            </article>
+        </section>
+
+        <div id="status" class="status">Страна не выбрана.</div>
+    </main>
+
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
